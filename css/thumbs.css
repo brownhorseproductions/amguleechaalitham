@@ -1,0 +1,36 @@
+/* Default tags and Bootstrap classes */
+
+
+/* Posts */
+
+.thumb {
+	margin: 0px 5px 10px 0px;
+	width: 30%;
+}
+
+/* Large desktop */
+
+@media (min-width: 1200px) {
+	.container > #thumbs .thumb { width: 255px; }
+	.container > #thumbs .thumb.cs2 { width: 560px; }
+}
+ 
+
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.container-fluid > #thumbs .thumb { width: 280px; }
+	.container-fluid > #thumbs .thumb.cs2 { width: 610px; }
+	.container > #thumbs .thumb { width: 337px; }
+	.container > #thumbs .thumb.cs2 { width: 100%; }
+}
+ 
+
+
+/* Landscape phone to portrait tablet */
+
+@media (max-width: 767px) {
+	body { padding: 50px 20px; }
+	.thumb, .thumb.cs2 { width: 100%; }
+}
